@@ -8,10 +8,18 @@
 </head>
 <body>
   <div class="container">
-    <h1>🌟 AI Quote Generator</h1>
-    <input type="text" id="keywordInput" placeholder="Enter a keyword (e.g. love, life)" />
-    <button onclick="getQuotes()">Generate Quotes</button>
-    <div id="quotesContainer"></div>
+    <h1>✨ AI Quote Generator ✨</h1>
+
+    <div class="search-box">
+      <input type="text" id="keyword" placeholder="Enter a topic (e.g. love, life, motivation)" />
+      <button onclick="getQuotes()">Generate</button>
+    </div>
+
+    <div id="quotes" class="quote-list"></div>
+
+    <div class="bottom-controls">
+      <button onclick="regenerateQuotes()">🔁 Regenerate</button>
+    </div>
   </div>
 
   <script src="script.js"></script>

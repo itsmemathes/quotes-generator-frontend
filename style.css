@@ -1,7 +1,8 @@
 body {
+  font-family: 'Segoe UI', sans-serif;
   margin: 0;
-  font-family: "Segoe UI", sans-serif;
-  background: linear-gradient(to right, #f5f7fa, #c3cfe2);
+  padding: 0;
+  background: linear-gradient(to right, #74ebd5, #acb6e5);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -9,53 +10,73 @@ body {
 }
 
 .container {
+  background: #ffffffd9;
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
   text-align: center;
-  background: white;
-  padding: 40px;
-  border-radius: 16px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
-  max-width: 600px;
   width: 90%;
+  max-width: 700px;
 }
 
 h1 {
+  margin-bottom: 20px;
   color: #333;
+}
+
+.search-box {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
   margin-bottom: 20px;
 }
 
-input {
-  width: 70%;
+input[type="text"] {
   padding: 10px;
-  border: 2px solid #0077cc;
-  border-radius: 8px;
-  margin-bottom: 20px;
   font-size: 16px;
+  width: 70%;
+  border-radius: 8px;
+  border: 1px solid #ccc;
 }
 
 button {
-  padding: 10px 20px;
-  background-color: #0077cc;
-  color: white;
+  padding: 10px 15px;
+  font-size: 16px;
   border: none;
   border-radius: 8px;
-  font-size: 16px;
   cursor: pointer;
+  background: #007bff;
+  color: white;
+  transition: background 0.3s ease;
 }
 
 button:hover {
-  background-color: #005fa3;
-}
-
-#quotesContainer {
-  margin-top: 30px;
-  text-align: left;
+  background: #0056b3;
 }
 
 .quote {
-  background-color: #eef6ff;
-  padding: 12px;
+  background: #f1f1f1;
   margin: 10px 0;
-  border-left: 5px solid #0077cc;
+  padding: 15px 20px;
+  border-radius: 10px;
+  position: relative;
+  font-size: 16px;
+  text-align: left;
+}
+
+.copy-btn {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  background: #28a745;
+  border: none;
+  padding: 5px 10px;
+  color: white;
   border-radius: 5px;
-  font-style: italic;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.bottom-controls {
+  margin-top: 20px;
 }
